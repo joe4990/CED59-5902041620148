@@ -28,8 +28,14 @@ return [
                     'class' => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
                 ],
+                
             ],
+            
         ],
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',]
+        
     ],
+    
     'params' => $params,
 ];
